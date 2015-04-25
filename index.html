@@ -14,23 +14,75 @@
 			<div id = "header">
 				<div id = "nav">
 					<ul>
-						<li><a href = "#">Home</a></li>
+						<li><a href = "/index.html">Home</a></li>
 						<li><a href = "#projects">Project Category</a></li>
-						<li><a href = "#">Contact Us</a></li>
+						<li><a href = "#contactus"> Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
 
-			<div id = "header_bottom"></div>
-			
 			<div id = "welcome">
+				<div id ="description">
+					<p>Be Creative! </p>
+					<p> Be Bold! </p>
+					<p>Get Started On A Project Now!</p>	
+				</div>
 
-			</div>
+				<div id = "log_in">
+					<button> Log In </button>
+					<button style = "margin-left: 40%;"> Sign Up </button>
+				</div>
+			</div>	
 
 			<div id = "project_category">
-				<h1> Project Categories </h1>
+				<br>
+				<h1 style = "margin:0; margin-left: 5%;"> Project Categories </h1>
+				<br>
 				<a name = "projects"></a>
+				<div id = "table_container">
+					<div class = "box">
+						<h2> Computer Science </h2>
+						<img src = "/images/compsci.png">
+					</div>
+
+					<div class = "box">
+						<h2> Chemical Eng.</h2>
+						<img src = "/images/chemEng.jpg">
+					</div>
+
+					<div class = "box">
+						<h2> Mechanical Eng.</h2>
+						<img src = "/images/mechanical.jpg">
+					</div>
+
+					<div class = "box">
+						<h2> Electrical Eng. </h2>
+						<img src = "/images/electrical.jpg">
+					</div>
+
+					<div class = "box">
+						<h2> Aerospace Eng. </h2>
+						<img src = "/images/aerospace.jpg">
+					</div>
+
+					<div class = "box">
+						<h2> Structural Eng. </h2>	
+						<img src = "/images/structural.jpg">
+					</div>
+				</div>
 			</div>
+			
+			<div id  = "contact_us">
+				<br><a name = "contactus"></a>
+				<h1 style = "margin-top: 0; margin-left: 5%;color:white;">Contact Us </h1>
+				<p style = "margin-left:5%; color:white;font-size:16pt;"> Leave us a message</p>
+				<form>
+					<input name = "name" type = "text" value = "Name"><br><br>
+					<input name = "email" type = "email" value = "Email Address"><br><br>
+					<textarea name = "message" value = "Message"  placeholder = "Message"></textarea><br><br>
+					<input type = "submit" style = "width:20%;" value = "submit">
+				</form>
+			</div>	
 		</div> 
 	</body>
 </html>
