@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -22,7 +26,7 @@
 
 			<div id = "login_box">
 				<h1 style = "color:white;"> Login</h1>
-				<form>
+				<form action = "/handleLogin.php" method = "POST">
 					<input name = "username" type = "text" placeholder = "Username"><br>	
 					<input name = "password" placeholder = "Password" type = "password"><br>
 					<a href = "#" style = "color: #DAA520;">  Forgot Password </a><br><br>

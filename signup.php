@@ -22,11 +22,11 @@
 
 			<div id = "signup_box">
 				<h1 style = "color:white;">Sign Up</h1>
-				<form action = "/handleLogin.php" method = "POST">
+				<form method = "post" action = "http://192.241.236.193/handleLogin.php">
 					<input type = "email" placeholder = "Email Address" name = "email">
-					<input type = "text" placeholder = "Username" name = "username">
-					<input type = "password" placeholder = "Password" name = "password">
-					<input type = "submit" style = "background-color:#DAA520; font-size:14pt; width:30%;">
+					<input type = "text" placeholder = "Username" name = "signup_user">
+					<input type = "password" placeholder = "Password" name = "signup_pass">
+					<input type = "submit" style = "background-color:#DAA520; font-size:14pt; width:30%;" value = "Sign Up">
 				</form>	
 			</div>
 		</div>
