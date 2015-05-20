@@ -38,7 +38,7 @@
 				<div id = "logout_account">
 					<ul>
 						<li><a href = "/handleLogin.php?user= <?=$user?>"> Logout </a></li>
-						<li><a href = "#"> Account Setting</a></li>
+						<li><a href = "/account.php"> Account Setting</a></li>
 					</ul>
 				</div>
 			</div>
