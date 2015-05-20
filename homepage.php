@@ -1,5 +1,13 @@
 <?php
-	$session_start();
+	session_start();
+	$user = "";
+	//check if the person have login or not. If not, redirect them to login page
+	if(!(isset($_SESSION['user'])))
+		header("Location: /login.html");
+
+	else{
+		$user = $_SESSION['user'];	
+	}
 ?>
 
 <!DOCTYPE html>
@@ -26,10 +34,10 @@
 
 			<div id = "user_section">
 				<img src = "\images\no_profile.jpg">
-				<h2 style = "position: absolute;margin-left:190px;"> Hello User</h2>	
+				<h2 style = "position: absolute;margin-left:190px;"> Hello <?=$user;?></h2>	
 				<div id = "logout_account">
 					<ul>
-						<li><a href = "#"> Logout </a></li>
+						<li><a href = "/handleLogin.php?user= <?=$user?>"> Logout </a></li>
 						<li><a href = "#"> Account Setting</a></li>
 					</ul>
 				</div>
